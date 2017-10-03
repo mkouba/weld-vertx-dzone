@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>org.jboss.weld.vertx</groupId>
+   <artifactId>weld-vertx-dzone-example</artifactId>
+   <version>0.0.1-SNAPSHOT</version>
+
+   <name>Weld Vert.x Dzone Example</name>
+
+   <url>http://weld.cdi-spec.org</url>
+   <licenses>
+      <license>
+         <name>Apache License, Version 2.0</name>
+         <distribution>repo</distribution>
+         <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+      </license>
+   </licenses>
+
+   <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.compiler.source>1.8</maven.compiler.source>
+      <maven.compiler.target>1.8</maven.compiler.target>
+      <version.weld-vertx>1.2.0.Final</version.weld-vertx>
+      <version.junit>4.12</version.junit>
+      <version.restassured>3.0.1</version.restassured>
+      <version.vertx>3.4.2</version.vertx>
+   </properties>
+
+   <dependencies>
+
+      <dependency>
+         <groupId>org.jboss.weld.vertx</groupId>
+         <artifactId>weld-vertx-web</artifactId>
+         <version>${version.weld-vertx}</version>
+      </dependency>
+
+      <!-- Test dependencies -->
+
+      <dependency>
+         <groupId>junit</groupId>
+         <artifactId>junit</artifactId>
+         <version>${version.junit}</version>
+         <scope>test</scope>
+      </dependency>
+
+      <dependency>
+         <groupId>io.vertx</groupId>
+         <artifactId>vertx-unit</artifactId>
+         <version>${version.vertx}</version>
+      </dependency>
+
+
+      <dependency>
+         <groupId>io.rest-assured</groupId>
+         <artifactId>rest-assured</artifactId>
+         <version>${version.restassured}</version>
+         <scope>test</scope>
+      </dependency>
+
+   </dependencies>
+
+</project>
